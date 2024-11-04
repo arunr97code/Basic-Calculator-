@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 80%);
+    background-image: url('calci2.jpg');
+    background-attachment: fixed;
+    overflow: hidden;
+    backdrop-filter: blur(3.5px);
+}
+#calculator{
+    font-family: arial;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 16%, 0.9);
+    backdrop-filter: 1px;
+    max-width: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#display{
+    width: 450px;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 4rem;
+    text-align:right;
+    border: none;
+    background-color: hsl(0, 0%, 20%, 0.9);
+    color: white;
+    text-shadow: 1px 1px 1.5px black;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: none;
+    font-family: monospace;
+    font-size: 3.5rem;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 40%);
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 0.5px black;
+   
+} 
+.calculate{
+    background-color: hsl(16, 100%, 50%);
+    box-shadow: 1px 1px 10px hsl(16, 100%, 50%);
+}
+.calculate:hover{
+    background-color: hsl(16, 100%, 60%);
+}
+.calculate:active{
+    background-color: hsl(16, 100%, 70%);
+}
+button:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+button:active{
+    background-color: hsl(0, 0%, 70%);
+}
+.operator{
+    background-color: hsl(39, 100%, 50%);
+    box-shadow: 0.5px 0.5px 4px hsl(39, 100%, 50%);
+}
+.operator:hover{
+    background-color: hsl(39, 100%, 60%);
+}
+.operator:active{    
+    background-color: hsl(39, 100%, 70%);
+}
